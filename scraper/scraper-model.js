@@ -6,6 +6,7 @@ module.exports = {
     scraper,
 }
 
+// Async function that gets the DOM and pulls data based on selections
 async function scraper() {
         const response = await fetch('https://www.kitco.com/market/')
         const text = await response.text()

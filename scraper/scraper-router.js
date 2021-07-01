@@ -2,7 +2,7 @@ const router = require('express').Router()
 
 const Scraper = require('./scraper-model')
 
-// GET test gold info
+// GET precious metals data
 router.get('/', (req, res) => {
     Scraper.scraper()
       .then((data) => {
