@@ -1,6 +1,6 @@
 # aupm_scraper
 
-- This is the REST API for AUPM so that they can display prices on their website that match kitco.
+- This is the REST API for AUPM so that they can display prices on their website that match kitco. Values are returned in Troy oz and USD.
 - It can be found at `https://aupm-scraper.herokuapp.com/`
 
 ## /api/data
