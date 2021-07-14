@@ -29,19 +29,19 @@ async function scraper() {
         const result = {
             'AUdate':AUdate,
             'AUtime':AUtime,
-            'AUbid':Math.round(AUbid/1.097 * 100)/100,
+            'AUbid':AUbid,
             'AGdate':AGdate,
             'AGtime':AGtime,
-            'AGbid':Math.round(AGbid/1.097 * 100)/100,
+            'AGbid':AGbid,
             'PTdate':PTdate,
             'PTtime':PTtime,
-            'PTbid':Math.round(PTbid/1.097 * 100)/100,
+            'PTbid':PTbid,
             'PDdate':PDdate,
             'PDtime':PDtime,
-            'PDbid':Math.round(PDbid/1.097 * 100)/100,
+            'PDbid':PDbid,
             'RHdate':RHdate,
             'RHtime':RHtime,
-            'RHbid':Math.round(RHbid/1.097 * 100)/100
+            'RHbid':RHbid
         }
         return (result)
 
