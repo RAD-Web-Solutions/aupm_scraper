@@ -1,9 +1,11 @@
 const jsdom = require('jsdom')
 const { JSDOM } = jsdom
 const fetch = require('node-fetch')
+const db = require("../database/dbConfig")
 
 module.exports = {
     scraper,
+    find,
 }
 
 // Async function that gets the DOM and pulls data based on selections
@@ -56,6 +58,11 @@ async function scraper() {
         return (result)
 
         console.log(result)
-    
+ }
 
-}
+ function find() {
+     let value = db("metals").where('id', 1).select('AUdate', 'AUtime', 'AUbid', 'AUask', 'AGdate', 'AGtime', 'AGbid', 'AGask', 'PTdate', 'PTtime', 'PTbid', 'PTask', 'PDdate', 'PDtime', 'PDbid', 'PDask', 'RHdate', 'RHtime', 'RHbid', 'RHask')
+     return value.first()
+
+ }
+

@@ -1,3 +1,3 @@
 module.exports = {
-    pgConnection = process.env.DATABASE_URL
+    pgConnection: process.env.DATABASE_URL
 }
